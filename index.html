@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+
+.grid-container, label {
+         background-color: green;
+         text-align: center;
+         padding: 10px;
+         color: white ;
+       }
+</style>
+
+</head>
+    <!--body of html is grid-container. It added my center allignment and make page look better. -->
+<body class="grid-container">
+    <h1>TOP 5 SUPER HEROES</h1>
+    <!--Images of 5 Super Heroes styled to come out circular.-->
+    <img width=150px class="rounded-circle" src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnGR-RmdlZ8tMDbELDktGNJxWGzSycFxRzA&usqp=CAU  alt="Spider Man">
+    <img width=150px class="rounded-circle" src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpm58XTkqUqZNl1h_qF_aWPXwROQ4dnn6CnQ&usqp=CAU  alt="Super Man">
+    <img width=150px class="rounded-circle" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFPQnjP8QAuBGdLo3CEj6zo2UI-vXugQHYEQ&usqp=CAU    alt="Iron Man">
+    <img width=150px class="rounded-circle" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQxLtUobidwTXUjcLPlBCoOXyiRPyBymsHow&usqp=CAU    alt="Hulk Smash">
+    <img width=150px class="rounded-circle" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-r015zsRJ6VOcNqrgTkvqn8BaRNVyZvISBw&usqp=CAU    alt="Wolverine"> 
+
+    <p>Create an All Star list of your favorite 5 Super Heroes!!!!  </p>
+    <!--This div is the input box for the hero list-->
+<div  class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-hero-name">List Name</label>
+                    <input type="text" class="form-control" id="new-hero-name">
+                </div>
+             </div>
+         </div>
+      <div>
+            <button id="new-hero" class="btn btn-primary form-control">Create List</button>
+        </div>
+    </div>
+</div><br>
+
+<div id="heros">
+
+</div>
+
+<!--Script linking my JS and other npm downloads.-->
+    <script src="hero.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
